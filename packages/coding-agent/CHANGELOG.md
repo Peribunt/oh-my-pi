@@ -22,7 +22,7 @@
 
 - Adjusted view placement to align with column‑capped output, fixing view offsets after line truncation
 - In Tern, warnings, errors, the update notice, `@file` reads and finished background jobs, tangents and supervised processes read like the rest of the chat: an icon and the message instead of a raw terminal line
-- The composer's generation-rate readout (`composer.tokenRate`) is on by default and sits beside the session cost, which shows the objective's rolling average in t/s — live while it streams, held once the objective is done, and reset by the next request; the default status line shows the same rate next to the cost in classic terminals, with the objective's fastest 1 s reading on the working row above the composer.
+- The composer's generation-rate readout (`composer.tokenRate`) is on by default and sits beside the session cost, which shows the live 1 s window in tok/s while the request runs, then the objective's rolling average as Ø… t/s once it is done (reset by the next request); the default status line shows the same rate next to the cost in classic terminals, with the working row above the composer carrying the fastest window while it runs and `Avg: … tok/s (Fast: … tok/s)` once the objective is done.
 
 ### Fixed
 
