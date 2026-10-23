@@ -23,6 +23,7 @@
 - Signing in during `omp setup` uses the same sign-in dialog as `/login`
 - In Tern, hovering a subagent's row shows its whole assignment as formatted Markdown in a wide card, instead of a narrow tooltip of the flattened text
 - Typing `B)` or `8)` no longer turns into 😎 (so "option B)" and "step 8)" stay as typed); `B-)` and `8-)` still do
+- The native composer bar places the tok/s generation rate beside the session cost instead of after the effort chip, the default status-line preset carries the same `token_rate` rate (in t/s) beside `cost` in classic terminals, and the objective’s fastest 1 s reading rides in the working row above the composer — the composer itself keeps only the rate.
 ### Fixed
 
 - Fixed the LSP diagnostics view showing "No issues" for files whose language server had not reported yet; they now show as unverified ([#17293](https://github.com/can1357/oh-my-pi/pull/17293) by [@JustasMasiulis](https://github.com/JustasMasiulis))
